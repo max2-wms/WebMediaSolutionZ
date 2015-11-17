@@ -1,2 +1,0 @@
-[18-Oct-2015 13:15:01 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home4/webmedj6/public_html/wp-content/plugins/hello.php on line 60
-[20-Oct-2015 19:08:09 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home4/webmedj6/public_html/wp-content/plugins/hello.php on line 60

@@ -23,10 +23,10 @@
 define('DB_NAME', 'webmedj6_webmediasolutionz');
 
 /** MySQL database username */
-define('DB_USER', 'webmedj6_tsn');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'zWkwMIutlO;$');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
