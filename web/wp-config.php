@@ -20,14 +20,48 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'webmedj6_webmediasolutionz');
+$domain = $_SERVER[ 'HTTP_HOST' ];	
+$environment = null;			
 
-/** MySQL database username */
-define('DB_USER', 'root');
+if ( is_numeric ( strpos( $domain, "localhost" ) ) ) {
+	$environment = "dev";
+} elseif ( is_numeric ( strpos( $domain, "staging" ) ) || is_numeric( strpos( $domain, "webmediasolutionz.com" ) ) ) {
+	$environment = "staging";
+} else {
+	$environment = "live";
+}
 
-/** MySQL database password */
-define('DB_PASSWORD', '');
+switch ( $environment ) {
+		case 'dev' : 	/** MySQL database name */
+						define('DB_NAME', 'wms');
 
+						/** MySQL database username */
+						define('DB_USER', 'root');
+
+						/** MySQL database password */
+						define('DB_PASSWORD', '');
+						break;
+
+	case 'staging' : 	/** MySQL database name */
+						define('DB_NAME', 'webmedj6_webmediasolutionz');
+
+						/** MySQL database username */
+						define('DB_USER', 'root');
+
+						/** MySQL database password */
+						define('DB_PASSWORD', '');
+						break;
+
+	case 'live' : 		/** MySQL database name */
+						define('DB_NAME', 'webmedj6_webmediasolutionz');
+
+						/** MySQL database username */
+						define('DB_USER', 'root');
+
+						/** MySQL database password */
+						define('DB_PASSWORD', '');
+						break;
+}
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
 

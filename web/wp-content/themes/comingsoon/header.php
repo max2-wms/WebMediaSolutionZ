@@ -10,7 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/stylesheets/css/lib/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:400,700" />
 
-		<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/style.css" />
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
 
 		<?php wp_head(); ?>
