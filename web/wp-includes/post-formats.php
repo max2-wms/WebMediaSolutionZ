@@ -102,11 +102,11 @@ function get_post_format_strings() {
 }
 
 /**
- * Retrieves an array of post format slugs.
+ * Retrieves the array of post format slugs.
  *
  * @since 3.1.0
  *
- * @return array The array of post format slugs.
+ * @return array The array of post format slugs as both keys and values.
  */
 function get_post_format_slugs() {
 	$slugs = array_keys( get_post_format_strings() );
@@ -221,7 +221,7 @@ function _post_format_get_term( $term ) {
 function _post_format_get_terms( $terms, $taxonomies, $args ) {
 	if ( in_array( 'post_format', (array) $taxonomies ) ) {
 		if ( isset( $args['fields'] ) && 'names' == $args['fields'] ) {
-			foreach( $terms as $order => $name ) {
+			foreach ( $terms as $order => $name ) {
 				$terms[$order] = get_post_format_string( str_replace( 'post-format-', '', $name ) );
 			}
 		} else {

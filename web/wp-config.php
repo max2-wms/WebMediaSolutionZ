@@ -18,6 +18,12 @@
  * @package WordPress
  */
 
+ /*
+* this prevents the wordpress admin interface from asking for FTP credentials
+* when trying to upload themes or plugins
+*/
+define('FS_METHOD', 'direct');
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'webmedj6_webmediasolutionz');

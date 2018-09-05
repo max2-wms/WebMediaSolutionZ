@@ -16,7 +16,6 @@ class Walker {
 	 * What the class handles.
 	 *
 	 * @since 2.1.0
-	 * @access public
 	 * @var string
 	 */
 	public $tree_type;
@@ -56,7 +55,7 @@ class Walker {
 	 * @since 2.1.0
 	 * @abstract
 	 *
-	 * @param string $output Passed by reference. Used to append additional content.
+	 * @param string $output Used to append additional content (passed by reference).
 	 * @param int    $depth  Depth of the item.
 	 * @param array  $args   An array of additional arguments.
 	 */
@@ -71,7 +70,7 @@ class Walker {
 	 * @since 2.1.0
 	 * @abstract
 	 *
-	 * @param string $output Passed by reference. Used to append additional content.
+	 * @param string $output Used to append additional content (passed by reference).
 	 * @param int    $depth  Depth of the item.
 	 * @param array  $args   An array of additional arguments.
 	 */
@@ -86,7 +85,7 @@ class Walker {
 	 * @since 2.1.0
 	 * @abstract
 	 *
-	 * @param string $output            Passed by reference. Used to append additional content.
+	 * @param string $output            Used to append additional content (passed by reference).
 	 * @param object $object            The data object.
 	 * @param int    $depth             Depth of the item.
 	 * @param array  $args              An array of additional arguments.
@@ -102,7 +101,7 @@ class Walker {
 	 * @since 2.1.0
 	 * @abstract
 	 *
-	 * @param string $output Passed by reference. Used to append additional content.
+	 * @param string $output Used to append additional content (passed by reference).
 	 * @param object $object The data object.
 	 * @param int    $depth  Depth of the item.
 	 * @param array  $args   An array of additional arguments.
@@ -122,11 +121,11 @@ class Walker {
 	 * @since 2.5.0
 	 *
 	 * @param object $element           Data object.
-	 * @param array  $children_elements List of elements to continue traversing.
+	 * @param array  $children_elements List of elements to continue traversing (passed by reference).
 	 * @param int    $max_depth         Max depth to traverse.
 	 * @param int    $depth             Depth of current element.
 	 * @param array  $args              An array of arguments.
-	 * @param string $output            Passed by reference. Used to append additional content.
+	 * @param string $output            Used to append additional content (passed by reference).
 	 */
 	public function display_element( $element, &$children_elements, $max_depth, $depth, $args, &$output ) {
 		if ( ! $element ) {
@@ -139,7 +138,7 @@ class Walker {
 		//display this element
 		$this->has_children = ! empty( $children_elements[ $id ] );
 		if ( isset( $args[0] ) && is_array( $args[0] ) ) {
-			$args[0]['has_children'] = $this->has_children; // Backwards compatibility.
+			$args[0]['has_children'] = $this->has_children; // Back-compat.
 		}
 
 		$cb_args = array_merge( array(&$output, $element, $depth), $args);
@@ -148,7 +147,7 @@ class Walker {
 		// descend only when the depth is right and there are childrens for this element
 		if ( ($max_depth == 0 || $max_depth > $depth+1 ) && isset( $children_elements[$id]) ) {
 
-			foreach( $children_elements[ $id ] as $child ){
+			foreach ( $children_elements[ $id ] as $child ){
 
 				if ( !isset($newlevel) ) {
 					$newlevel = true;
@@ -215,7 +214,7 @@ class Walker {
 		$top_level_elements = array();
 		$children_elements  = array();
 		foreach ( $elements as $e) {
-			if ( 0 == $e->$parent_field )
+			if ( empty( $e->$parent_field ) )
 				$top_level_elements[] = $e;
 			else
 				$children_elements[ $e->$parent_field ][] = $e;
@@ -250,7 +249,7 @@ class Walker {
 		if ( ( $max_depth == 0 ) && count( $children_elements ) > 0 ) {
 			$empty_array = array();
 			foreach ( $children_elements as $orphans )
-				foreach( $orphans as $op )
+				foreach ( $orphans as $op )
 					$this->display_element( $op, $empty_array, 1, 0, $args, $output );
 		 }
 
@@ -374,7 +373,7 @@ class Walker {
 		if ( $end >= $total_top && count( $children_elements ) > 0 ) {
 			$empty_array = array();
 			foreach ( $children_elements as $orphans )
-				foreach( $orphans as $op )
+				foreach ( $orphans as $op )
 					$this->display_element( $op, $empty_array, 1, 0, $args, $output );
 		}
 
@@ -382,9 +381,12 @@ class Walker {
 	}
 
 	/**
+	 * Calculates the total number of root elements.
 	 *
-	 * @param array $elements
-	 * @return int
+	 * @since 2.7.0
+	 *
+	 * @param array $elements Elements to list.
+	 * @return int Number of root elements.
 	 */
 	public function get_number_of_root_elements( $elements ){
 		$num = 0;
@@ -399,6 +401,8 @@ class Walker {
 
 	/**
 	 * Unset all the children for a given top level element.
+	 *
+	 * @since 2.7.0
 	 *
 	 * @param object $e
 	 * @param array $children_elements
