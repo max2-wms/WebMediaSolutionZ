@@ -1,0 +1,69 @@
+version: '3.5'
+
+services:
+
+  portainer:
+    container_name: wms_portainer
+    image: portainer/portainer
+    ports:
+      - '9000:9000'
+    networks:
+      - wms
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    links:
+      - wordpress
+      - db
+      - phpmyadmin
+    depends_on:
+      - wordpress
+      - db
+      - phpmyadmin
+
+  wordpress:
+    container_name: wms_web
+    depends_on:
+      - db
+    image: max2wms/wms
+    build: .
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_PASSWORD: password01
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - wms
+
+  db:
+    container_name: wms_mysql
+    image: mysql:5.7
+    restart: always
+    volumes:
+      - ./data/actual/prod:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password01
+    networks:
+      - wms
+
+  phpmyadmin:
+    container_name: wms_phpmyadmin
+    depends_on:
+      - db
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: password01
+    networks:
+      - wms
+
+networks:
+  wms:
+    name: wms
+
+volumes:
+  wms_data:
