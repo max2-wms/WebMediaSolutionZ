@@ -45,6 +45,3 @@ services:
 networks:
   wms:
     name: wms
-
-volumes:
-  wms_data:
