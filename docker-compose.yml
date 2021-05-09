@@ -25,7 +25,6 @@ services:
     depends_on:
       - db
     image: wordpress:4.9.8
-    restart: always
     volumes:
       - ./web/wp-content:/var/www/html/wp-content
       - ./php.ini:/var/www/html/php.ini
@@ -34,14 +33,12 @@ services:
       WORDPRESS_DB_PASSWORD: password01
     ports:
       - 80:80
-      - 443:443
     networks:
       - wms
 
   db:
     container_name: wms_mysql
     image: mysql:5.7
-    restart: always
     volumes:
       - ./data/actual/dev:/var/lib/mysql
     environment:
@@ -54,7 +51,6 @@ services:
     depends_on:
       - db
     image: phpmyadmin/phpmyadmin
-    restart: always
     ports:
       - 8080:80
     environment:

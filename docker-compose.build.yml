@@ -26,20 +26,17 @@ services:
       - db
     image: max2wms/wms
     build: .
-    restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_PASSWORD: password01
     ports:
       - 80:80
-      - 443:443
     networks:
       - wms
 
   db:
     container_name: wms_mysql
     image: mysql:5.7
-    restart: always
     volumes:
       - ./data/actual/prod:/var/lib/mysql
     environment:
@@ -52,7 +49,6 @@ services:
     depends_on:
       - db
     image: phpmyadmin/phpmyadmin
-    restart: always
     ports:
       - 8080:80
     environment:
