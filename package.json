@@ -4,8 +4,9 @@
   "description": "Dockerized Wordpress application for Web Media Solutionz",
   "main": "index.js",
   "scripts": {
-    "dev:up": "docker-compose up -d",
-    "dev:down": "docker-compose down",
+    "start": "docker-compose up -d",
+    "stop": "docker-compose down",
+    "build": "docker build -t max2wms/wms .",
     "build:up": "docker-compose -f docker-compose.build.yml up --build",
     "build:down": "docker-compose -f docker-compose.build.yml down",
     "prod:up": "docker-compose -f docker-compose.prod.yml up -d",
@@ -13,7 +14,8 @@
     "swarm:init": "docker swarm init",
     "swarm:leave": "docker swarm leave --force",
     "swarm:up": "docker stack deploy -c docker-compose.stack.yml wms",
-    "swarm:down": "docker stack rm wms"
+    "swarm:down": "docker stack rm wms",
+    "swarm:deploy": "./scripts/deploy-prod.sh"
   },
   "repository": {
     "type": "git",
