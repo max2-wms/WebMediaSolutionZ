@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3.3'
 
 services:
 
@@ -40,4 +40,3 @@ services:
 
 networks:
   wms:
-    name: wms

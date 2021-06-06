@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3.3'
 
 services:
 
@@ -16,7 +16,6 @@ services:
       - phpmyadmin
 
   wordpress:
-    container_name: wms_wordpress
     depends_on:
       - db
     image: max2wms/wms
@@ -29,7 +28,6 @@ services:
       - wms
 
   db:
-    container_name: wms_mysql
     image: mysql:5.7
     volumes:
       - ./data/actual/prod:/var/lib/mysql
@@ -39,7 +37,6 @@ services:
       - wms
 
   phpmyadmin:
-    container_name: wms_phpmyadmin
     depends_on:
       - db
     image: phpmyadmin/phpmyadmin
@@ -53,4 +50,3 @@ services:
 
 networks:
   wms:
-    name: wms
