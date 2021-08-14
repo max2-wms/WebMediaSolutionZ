@@ -12,6 +12,7 @@
     "prod:up": "docker-compose -f docker-compose.prod.yml up -d",
     "prod:down": "docker-compose -f docker-compose.prod.yml down",
     "swarm:init": "docker swarm init",
+    "swarm:init:addr": "docker swarm init --advertise-addr 143.198.40.201",
     "swarm:leave": "docker swarm leave --force",
     "swarm:up": "docker stack deploy -c docker-compose.stack.yml wms",
     "swarm:down": "docker stack rm wms",
