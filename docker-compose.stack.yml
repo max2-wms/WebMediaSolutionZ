@@ -2,6 +2,23 @@ version: '3.3'
 
 services:
 
+  portainer:
+    image: portainer/portainer
+    ports:
+      - '9000:9000'
+    networks:
+      - wms
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock'
+    links:
+      - wordpress
+      - db
+      - phpmyadmin
+    depends_on:
+      - wordpress
+      - db
+      - phpmyadmin
+
   viz:
     image: dockersamples/visualizer
     ports:

@@ -2,24 +2,6 @@ version: '3.3'
 
 services:
 
-  portainer:
-    container_name: wms_portainer
-    image: portainer/portainer
-    ports:
-      - '9000:9000'
-    networks:
-      - wms
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    links:
-      - wordpress
-      - db
-      - phpmyadmin
-    depends_on:
-      - wordpress
-      - db
-      - phpmyadmin
-
   wordpress:
     container_name: wms_web
     depends_on:
