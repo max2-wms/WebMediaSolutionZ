@@ -3,7 +3,7 @@
 	$lang = array(
 		// CONTENT
 
-		"our web site is"					=>					"our website is",
+		"our web site is"					=>					"our website is..it is...",
 		"coming soon"						=>					"coming soon!",
 		"stay tuned"						=>					"We have been spending long hours in order to launch our new website. Stay tuned!",
 		"inquiries"							=>					"Contact us for any inquiries",
