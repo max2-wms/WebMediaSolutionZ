@@ -4,7 +4,7 @@
 		// CONTENT
 
 		"our web site is"					=>					"our website is",
-		"coming soon"						=>					"coming soon!",
+		"coming soon"						=>					"coming soon!!!",
 		"stay tuned"						=>					"We have been spending long hours in order to launch our new website. Stay tuned!",
 		"inquiries"							=>					"Contact us for any inquiries",
 
