@@ -1,0 +1,12 @@
+[12-Sep-2021 01:48:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/dreamits/wp.dreamitsolution.net/itsolve/wp-content/themes/itsolve/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/dreamits/wp.dreamitsolution.net/itsolve/wp-content/themes/itsolve/index.php on line 9
+[07-Oct-2021 07:48:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/dreamits/wp.dreamitsolution.net/itsolve/wp-content/themes/itsolve/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/dreamits/wp.dreamitsolution.net/itsolve/wp-content/themes/itsolve/index.php on line 9
+[11-Mar-2022 02:40:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/dreamits/wp.dreamitsolution.net/itsolve/wp-content/themes/itsolve/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/dreamits/wp.dreamitsolution.net/itsolve/wp-content/themes/itsolve/index.php on line 9

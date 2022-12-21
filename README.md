@@ -9,6 +9,6 @@ This project uses Wordpress version 4.9.8 to start with but can be upgraded to w
 
 Run `docker-compose up` for a dev server. Navigate to `//localhost/`.
 
-## Build
+## Build and run Development server
 
 Run `docker-compose -f docker-compose.build.yml up` to build the project.

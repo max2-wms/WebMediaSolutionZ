@@ -1,0 +1,1312 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: itsolve\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-13 13:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.0; wp-5.3.4"
+
+#: includes/itsolve-option-framework.php:1595
+msgid " Footer Social Section"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:523
+msgid " Header Social Icon"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:408
+msgid " Left Opening Middle Icon Right Login"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:640
+msgid "\"itsolve\""
+msgstr ""
+
+#: template-parts/content-list.php:29 template-parts/content-search.php:31
+#: template-parts/content-single.php:25
+msgid "% Comments"
+msgstr ""
+
+#: includes/itsolve-global-function.php:283
+msgid "(Edit)"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1532
+msgid "+848 556 778 345"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:432
+msgid "+880 320 432 242"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: includes/template-tags.php:50 includes/template-tags.php:56
+msgid ", "
+msgstr ""
+
+#: template-parts/content-list.php:29 template-parts/content-search.php:31
+#: template-parts/content-single.php:25
+msgid "0 Comments"
+msgstr ""
+
+#: template-parts/content-list.php:29 template-parts/content-search.php:31
+#: template-parts/content-single.php:25
+msgid "1 Comments"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:681
+msgid "1 Header Menu With Stiky"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1504
+msgid "1st Floor New World Tower Rang."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:418
+msgid "1st Floor New World."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:682
+msgid "2 Header Transparent Without Top Menu "
+msgstr ""
+
+#: includes/itsolve-option-framework.php:683
+msgid "3 Header Transparent With Top Menu"
+msgstr ""
+
+#: 404.php:32 includes/itsolve-breadcrumb.php:124
+msgid "404"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1334
+msgid "404 Area"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1344
+msgid "404 background with image, color."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1379
+msgid "404 Information"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1381
+msgid "404 Oops! The page you are Looking for does not exist. "
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1343
+msgid "404 Page Background Color"
+msgstr ""
+
+#: functions.php:266 functions.php:275
+msgid "Add widgets here."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:468
+msgid "Address Icon Hover Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1487
+msgid "Address Image Logo"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1564
+msgid "Address Section BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1555
+msgid "Address Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1495
+msgid "Address Title"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1537
+msgid "Address Title Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1546
+msgid "Address Title Text Color 2"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1480
+msgid "Address Title Text Logo"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:355
+msgid "All Header Hide"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:353
+msgid "All Menu OFF/ON section"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:983
+msgid "Allow your users to choose the spacing or margin they want."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:890
+#: includes/itsolve-option-framework.php:1391
+msgid "Allow your users to choose the spacing or padding they want."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:507
+#: includes/itsolve-option-framework.php:1581
+#: includes/itsolve-option-framework.php:1723
+#: includes/itsolve-option-framework.php:1831
+#: includes/itsolve-option-framework.php:1915
+msgid "Allow your users to choose the spacing padding they want."
+msgstr ""
+
+#: includes/itsolve-breadcrumb.php:94 includes/itsolve-breadcrumb.php:99
+#: includes/itsolve-breadcrumb.php:104
+msgid "Archive for"
+msgstr ""
+
+#: includes/itsolve-breadcrumb.php:109
+msgid "Author"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1026
+msgid "BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1127
+#: includes/itsolve-option-framework.php:1228
+msgid "BG color"
+msgstr ""
+
+#. Name of the template
+msgid "Blog"
+msgstr ""
+
+#. Name of the template
+msgid "Blog 2column"
+msgstr ""
+
+#: includes/itsolve-breadcrumb.php:114
+msgid "Blog Archives"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1118
+msgid "Blog Area"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1192
+msgid "Blog btn Border Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1214
+msgid "Blog Btn Hover BG & Border Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1203
+msgid "Blog btn Hover Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1181
+msgid "Blog btn Text Color"
+msgstr ""
+
+#. Name of the template
+msgid "Blog Grid"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1126
+msgid "Blog Item BG Color"
+msgstr ""
+
+#. Name of the template
+msgid "Blog List"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1159
+msgid "Blog Post Meta Icon Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1169
+msgid "Blog Post Meta Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1227
+msgid "Blog Sidebar BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1321
+msgid "Blog Social share Show/Hide"
+msgstr ""
+
+#: includes/itsolve-breadcrumb.php:11
+msgid "Blog Standerd"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1136
+msgid "Blog Title Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1148
+msgid "Blog Title Hover Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:176
+msgid "Body Typography Style"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:371
+#: includes/itsolve-option-framework.php:382
+#: includes/itsolve-option-framework.php:1449
+msgid "Box Layout"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:913
+msgid "Breadcrumb Area"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:926
+msgid "Breadcrumb Background"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:927
+msgid "Breadcrumb background with image, color."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:969
+msgid "Breadcrumb Current Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:945
+msgid "Breadcrumb Text And Font style"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:935
+msgid "Breadcrumb Title Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:690
+msgid "Button Text"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:697
+msgid "Button URL"
+msgstr ""
+
+#: includes/itsolve-breadcrumb.php:47
+msgid "Case Study Details"
+msgstr ""
+
+#: includes/itsolve-tgm-activation.php:27
+msgid "Cmb2"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1749
+msgid "Column 1"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1750
+msgid "Column 2"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1751
+msgid "Column 3"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1752
+msgid "Column 4"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1753
+msgid "Column 6"
+msgstr ""
+
+#: includes/itsolve-global-function.php:237
+msgid "Comment"
+msgstr ""
+
+#: comments.php:29 comments.php:61
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:78
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:43
+#, php-format
+msgctxt "comments title"
+msgid "One Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/itsolve-option-framework.php:1497
+msgid "Company Address"
+msgstr ""
+
+#. Author of the theme
+msgid "Consultant"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1066
+msgid "Contact Button BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1075
+msgid "Contact Button Hover BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1085
+msgid "Contact Button Hover Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1057
+msgid "Contact Button Text Color"
+msgstr ""
+
+#: includes/itsolve-tgm-activation.php:22
+msgid "Contact form 7"
+msgstr ""
+
+#: footer.php:388
+msgid "Copyright &copy; itsolve 2019 all right reserved."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1870
+msgid "Copyright &copy; itsolve all rights reserved."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1868
+msgid "Copyright information"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1898
+msgid "Copyright Section BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1433
+msgid "Copyright Section Show/Hide"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1855
+msgid "Copyright Style Layout"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1860
+msgid "Copyright Text and Left Menu"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1859
+msgid "Copyright Text and Right Menu"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1861
+msgid "Copyright Text and Social Icon"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1880
+msgid "Copyright Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1889
+msgid "Copyright Text Hover Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1858
+msgid "Copyright Text Style"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:629
+msgid "Create logo spacing massing"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1414
+msgid "Customize Your Footer"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1933
+msgid "Customizer Only"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1940
+msgid "Customizer Only Option"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1005
+msgid "Default Color"
+msgstr ""
+
+#. Name of the template
+msgid "Default itsolve Template"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:575
+msgid "Default Logo"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1518
+msgid "demo@example.com"
+msgstr ""
+
+#. %s: Name of current post
+#: includes/template-tags.php:72
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1094
+msgid "EM Video Widget Ovelrlay Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1511
+msgid "Email Address"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1516
+msgid "Email Number"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1509
+msgid "Email Title"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:532
+msgid "Enter social links"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:425
+msgid "example@example.com"
+msgstr ""
+
+#: functions.php:288
+msgid "Footer "
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1459
+msgid "Footer Address Section"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1421
+msgid "Footer Address Section Show/Hide"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1412
+msgid "Footer Area"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1846
+msgid "Footer Copyright Info"
+msgstr ""
+
+#: functions.php:47
+msgid "Footer Menu"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1738
+msgid "Footer Widget Section"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:372
+#: includes/itsolve-option-framework.php:383
+#: includes/itsolve-option-framework.php:1450
+msgid "Full Layout"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:156
+msgid "General"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:692
+msgid "Get A Quote"
+msgstr ""
+
+#: 404.php:36
+msgid "Go Home"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:345
+msgid "Header area"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:566
+#: includes/itsolve-option-framework.php:568
+msgid "Header Logo"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:667
+msgid "Header Menu"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:347
+msgid "Header options"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:362
+msgid "Header Top"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:454
+msgid "Header Top Address Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:445
+msgid "Header Top Icon Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:490
+msgid "Header Top Section BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:394
+msgid "Header Top Style "
+msgstr ""
+
+#: includes/itsolve-option-framework.php:196
+msgid "Headibg Typography Style"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:217
+msgid "Heading Typography H1"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:237
+msgid "Heading Typography H2"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:257
+msgid "Heading Typography H3"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:277
+msgid "Heading Typography H4"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:297
+msgid "Heading Typography H5"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:317
+msgid "Heading Typography H6"
+msgstr ""
+
+#: includes/itsolve-breadcrumb.php:66
+msgid "Home"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1036
+msgid "Hover BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1046
+msgid "Hover Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1380
+#: includes/itsolve-option-framework.php:1869
+msgid "HTML tags allowed: a, br, em, strong"
+msgstr ""
+
+#. URI of the theme
+msgid "http://webitkurigram.com/wp/itsolve/"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://www.templatemonster.com/vendors/consultant/"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:360
+msgid ""
+"If you ON this section. It will show header top section all your single page."
+" But If you want to only show header top in home and others page, Please "
+"goes to your page, there you can see header top OFF/ON section. Please set It"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:417
+msgid "insert address ex:- house, road-4."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1510
+msgid "insert area name ex:- Email Address"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1503
+msgid "insert area name ex:- house, road-4."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1496
+msgid "insert area name ex:- Our Address"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1524
+msgid "insert area name ex:- Telephone Number"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:416
+msgid "Insert Company Location"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:423
+msgid "Insert Email Address"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:424
+msgid "Insert email address"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1517
+msgid "Insert email number"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:396
+msgid "Insert header top info"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:430
+msgid "Insert Phone Number"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:431
+#: includes/itsolve-option-framework.php:1531
+msgid "Insert phone number"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:531
+msgid "Insert Social Icons"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:439
+#: includes/itsolve-option-framework.php:691
+msgid "Insert text"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:639
+msgid "Insert text ex: - \"itsolve\", Must be use \"\" for logo text "
+msgstr ""
+
+#: includes/itsolve-option-framework.php:698
+msgid "Insert url ex: - http://webitkurigram.com/"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1848
+msgid "Insert your copyright style"
+msgstr ""
+
+#: includes/itsolve-tgm-activation.php:52
+msgid "Instagram feed"
+msgstr ""
+
+#. Name of the theme
+#: includes/itsolve-option-framework.php:1481
+#: includes/itsolve-option-framework.php:1616
+msgid "itsolve"
+msgstr ""
+
+#: includes/itsolve-tgm-activation.php:14
+msgid "itsolve helper Plugin"
+msgstr ""
+
+#: includes/itsolve-tgm-activation.php:42
+msgid "kingcomposer"
+msgstr ""
+
+#. %s: post title
+#: includes/template-tags.php:65
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: includes/itsolve-global-function.php:243
+msgid "Leave Comment"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:406
+msgid "Left Address Right Icon"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:409
+msgid "Left Address Right Icon & Search"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:407
+msgid "Left Icon Right Address"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:615
+msgid "Logo Height"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:638
+msgid "Logo Text"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:622
+msgid "Logo Width"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1631
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur ahkl adipisicing elit, sed do "
+"eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim "
+"veniam, quis nostrud"
+msgstr ""
+
+#: includes/itsolve-tgm-activation.php:32
+msgid "Mailchimp for WP"
+msgstr ""
+
+#: footer.php:65 header.php:52 header.php:108 header.php:122 header.php:167
+#: header.php:238 header.php:286 header.php:342
+msgid "mailto:"
+msgstr ""
+
+#: functions.php:44
+msgid "Main Menu"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:780
+msgid "Main Menu Hover Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:740
+msgid "Main Menu Section BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:790
+msgid "Main Menu Sticky BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:822
+msgid "Main Menu Sticky Current Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:805
+msgid "Main Menu Sticky Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:753
+msgid "Main Menu Text style"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:712
+msgid "Menu Button & Search BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:703
+msgid "Menu Button & Search Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:731
+msgid "Menu Hover Button BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:722
+msgid "Menu Hover Button Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:607
+msgid "Mobile Logo"
+msgstr ""
+
+#: functions.php:46
+msgid "Mobile Menu"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:645
+msgid "Mobile Menu BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:654
+msgid "Mobile Menu Icon Color"
+msgstr ""
+
+#: comments.php:33 comments.php:65
+msgid "Newer Comments"
+msgstr ""
+
+#: search.php:30
+msgid "Nothing Found"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:920
+msgid ""
+"Notice:- If you want to more breadrucmb control. Please see every page "
+"bottom area. We Added More Field Here"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1012
+msgid ""
+"Notice:- we set our all color in our adns, But only carousel Arrow, contact "
+"button and scroll button color will be change by below option"
+msgstr ""
+
+#. If there are characters in your language that are not
+#. supported by Roboto, translate this to 'off'. Do not translate
+#. into your own language.
+#: functions.php:132
+msgctxt "Nunito font: on or off"
+msgid "on"
+msgstr ""
+
+#: comments.php:32 comments.php:64
+msgid "Older Comments"
+msgstr ""
+
+#: includes/itsolve-tgm-activation.php:47
+msgid "One Click Demo Import"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:583
+msgid "One Page Menu Logo"
+msgstr ""
+
+#: functions.php:45
+msgid "OnePage Menu"
+msgstr ""
+
+#: 404.php:33
+msgid "Oops! The page you are looking for does not exist."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:440
+msgid "Open hours: 9.00-24.00 Mon-Sat"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:480
+msgid "Opening BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:438
+msgid "Opening Hour Text"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1946
+msgid "Opt 1"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1947
+msgid "Opt 2"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1948
+msgid "Opt 3"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:506
+#: includes/itsolve-option-framework.php:982
+#: includes/itsolve-option-framework.php:1580
+#: includes/itsolve-option-framework.php:1722
+#: includes/itsolve-option-framework.php:1830
+#: includes/itsolve-option-framework.php:1914
+msgid "Padding Option"
+msgstr ""
+
+#: functions.php:273
+msgid "Page"
+msgstr ""
+
+#. Name of the template
+msgid "Page Left Sidebar"
+msgstr ""
+
+#. Name of the template
+msgid "Page Right Sidebar"
+msgstr ""
+
+#: template-parts/content-page.php:41 template-parts/content-single.php:43
+msgid "Pages:"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1311
+msgid "Pagination Hover Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1300
+msgid "Pagination Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1530
+msgid "Phone Number"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:675
+msgid ""
+"Please set a menu for your all single page. But, For your home and others "
+"main page menu, Please goes to your page, there you can see header menu "
+"section. Please set a  menu style there"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1482
+#: includes/itsolve-option-framework.php:1617
+msgid ""
+"Please set this way for different color. ex-  T<span>H</span>E<span>M</span>"
+"E<span>X</span>P"
+msgstr ""
+
+#: includes/template-tags.php:33
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: includes/itsolve-global-function.php:240
+msgid "Post Comment"
+msgstr ""
+
+#: includes/template-tags.php:28
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: includes/template-tags.php:52
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: includes/itsolve-tgm-activation.php:37
+msgid "Redux-framework"
+msgstr ""
+
+#: includes/itsolve-global-function.php:275
+msgid "Reply"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:599
+msgid "Retina Logo"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1370
+msgid "Return Link Color"
+msgstr ""
+
+#: functions.php:133
+msgctxt "Roboto font: on or off"
+msgid "on"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search Here"
+msgstr ""
+
+#: includes/itsolve-breadcrumb.php:119
+msgid "Search Results"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:889
+#: includes/itsolve-option-framework.php:1390
+msgid "Section Padding Option"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:680
+msgid "Select Default Menu"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:677
+msgid "Select Default Menu For All Single Page"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1446
+msgid "Select Footer layout"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:379
+msgid "Select Header layout"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:368
+msgid "Select Header Top layout"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1468
+#: includes/itsolve-option-framework.php:1603
+msgid "Select Logo Style"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:403
+msgid "Select Your Top Header Style"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:617
+msgid "Set height ex-100px"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:631
+msgid "Set number default-15px"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:624
+msgid "Set Width ex-100px"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1472
+#: includes/itsolve-option-framework.php:1607
+msgid "Show Image Logo"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1471
+#: includes/itsolve-option-framework.php:1606
+msgid "Show Text Logo"
+msgstr ""
+
+#: functions.php:264
+msgid "Sidebar"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1245
+msgid "Sidebar Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1267
+msgid "Sidebar Text Hover Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1236
+msgid "Sidebar Title Text Color"
+msgstr ""
+
+#: includes/itsolve-breadcrumb.php:29
+msgid "Single Blog"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1278
+msgid "Single Blog Social Icon & Title bar Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1289
+msgid "Single Blog Social Icon Hover Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1677
+msgid "Social Icon BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1668
+msgid "Social Icon Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1696
+msgid "Social Icon hover BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1687
+msgid "Social Icon hover Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1622
+msgid "Social Image Logo"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1630
+msgid "Social information"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1706
+msgid "Social Section BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1439
+msgid "Social Section Show/Hide"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1659
+msgid "Social section Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1641
+msgid "Social Title Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1650
+msgid "Social Title Text Color 2"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1615
+msgid "Social Title Text Logo"
+msgstr ""
+
+#: search.php:31
+msgid ""
+"Sorry, but nothing matched your search terms, please try a different search "
+"term."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:838
+msgid "Sub Menu BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:851
+msgid "Sub Menu Font style"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:872
+msgid "Sub Menu Hover Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1361
+msgid "Sub Title Color"
+msgstr ""
+
+#: includes/template-tags.php:58
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: footer.php:76 header.php:58 header.php:105 header.php:128 header.php:164
+#: header.php:235 header.php:283 header.php:339
+msgid "tel:"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1525
+msgid "Telephone Number"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1523
+msgid "Telephone Title"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1017
+msgid "Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1942
+msgid "The field desc is NOT visible in customizer."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1941
+msgid "The subtitle is NOT visible in customizer"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:35
+#: includes/itsolve-option-framework.php:36
+msgid "Theme Options"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1934
+msgid "This Section should be visible only in Customizer"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1352
+msgid "Title Color"
+msgstr ""
+
+#: functions.php:43
+msgid "Top Menu"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:591
+msgid "Transparent Menu Logo"
+msgstr ""
+
+#. Description of the theme
+msgid "TtSoft - IT Solution &amp; Business Service WP Theme"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1502
+msgid "Type Your Address Here"
+msgstr ""
+
+#: header.php:198 header.php:373
+msgid "Type Your Keyword"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:168
+msgid "Typography Area"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:184
+#: includes/itsolve-option-framework.php:205
+#: includes/itsolve-option-framework.php:226
+#: includes/itsolve-option-framework.php:246
+#: includes/itsolve-option-framework.php:266
+#: includes/itsolve-option-framework.php:286
+#: includes/itsolve-option-framework.php:306
+#: includes/itsolve-option-framework.php:326
+#: includes/itsolve-option-framework.php:767
+#: includes/itsolve-option-framework.php:858
+#: includes/itsolve-option-framework.php:956
+msgid "Typography option with each property can be called individually."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:602
+msgid "Upload logo here. ex: - it is work in Retina Logo"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:594
+msgid "Upload logo here. ex: - it is work in transparent menu"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:586
+msgid "Upload logo here. ex:- it is work in one page menu"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:610
+msgid "Upload logo here. recommend size:- 1801x48px."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1490
+#: includes/itsolve-option-framework.php:1625
+msgid ""
+"Upload logo here. recommend size:- 220x50px. Notice:- If you upload this "
+"logo, Title text logo will be hide "
+msgstr ""
+
+#: includes/itsolve-option-framework.php:578
+msgid "Upload logo here.ex: - it is work in default menu."
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1336
+msgid "Use this section to upload background images, select background color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:158
+msgid "Wellcome Our Theme Option"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1746
+msgid "Widget Column Count"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1814
+msgid "Widget Section BG Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1427
+msgid "Widget Section Hide/show"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1769
+msgid "Widget Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1798
+msgid "Widget Text Hover Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:1760
+msgid "Widget Title Text Color"
+msgstr ""
+
+#: includes/itsolve-option-framework.php:508
+#: includes/itsolve-option-framework.php:891
+#: includes/itsolve-option-framework.php:984
+#: includes/itsolve-option-framework.php:1392
+#: includes/itsolve-option-framework.php:1582
+#: includes/itsolve-option-framework.php:1724
+#: includes/itsolve-option-framework.php:1832
+#: includes/itsolve-option-framework.php:1916
+msgid ""
+"You can enable or disable any piece of this field. Top, Right, Bottom, Left, "
+"or Units."
+msgstr ""
