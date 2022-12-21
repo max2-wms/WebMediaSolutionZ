@@ -1,0 +1,383 @@
+/* THEME UNIT TEST CSS */
+
+
+.tag-sticky-2 .itsolve-single-blog {
+	border: 1px solid rgb(254, 130, 100);
+}
+
+.post_reply ul, .blog-content ul, .single-blog-content ul {
+	list-style-type: square;
+	padding-left: 18px;
+}
+
+.blockquote p{
+	font-size:16px;
+}
+
+
+
+table {
+    border-bottom: 1px solid #ededed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 14px;
+    line-height: 2;
+    margin: 0 0 20px;
+    width: 100%;
+}
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+	   /*  border: 1px solid #ededed; */
+}
+td {
+    border-top: 1px solid #ededed;
+    padding: 6px 10px 6px 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: center;
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 30px;
+    font-size: 14px;
+    border-left: 5px solid #b9b9b9;
+    background: #f9f9f9;
+    font-style: italic;
+}
+blockquote blockquote {
+	margin-right: 0;
+}
+
+blockquote cite,
+blockquote small {
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+blockquote em,
+blockquote i {
+	font-style: normal;
+}
+
+blockquote strong,
+blockquote b {
+}
+
+small {
+	font-size: smaller;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+dl {
+	margin: 0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 20px;
+}
+
+address {
+    font-style: italic;
+    margin: 0 0 24px;
+}
+i, cite, em, var, address, dfn {
+    font-style: italic;
+}
+em{
+ font-style: italic;
+font-weight: bold; 
+}
+pre {
+    background: #f5f5f5;
+    margin: 20px 0;
+    overflow: auto;
+    padding: 20px;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+tt, code, samp {
+   color:#666;
+}
+kbd{
+
+}
+
+
+/* image aligment */
+.entry-content img.alignleft, .entry-content .wp-caption.alignleft {
+    margin-left: -60px;
+}
+figure.wp-caption.alignleft, img.alignleft {
+    margin: 5px 20px 5px 0;
+}
+img.size-full, img.size-large, img.wp-post-image {
+    height: auto;
+    max-width: 100%;
+}
+.alignleft {
+    float: left;
+}
+.entry-content img, .entry-summary img, .comment-content img, .widget img, .wp-caption {
+    max-width: 100%;
+}
+/**
+ * 8.0 Alignments
+ */
+
+.alignleft {
+	display: inline;
+	float: left;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+blockquote.alignleft,
+.wp-caption.alignleft,
+img.alignleft {
+	margin: 0.4em 1.6em 1.6em 0;
+}
+
+blockquote.alignright,
+.wp-caption.alignright,
+img.alignright {
+	margin: 0.4em 0 1.6em 1.6em;
+}
+
+blockquote.aligncenter,
+.wp-caption.aligncenter,
+img.aligncenter {
+	clear: both;
+	margin-top: 0.4em;
+	margin-bottom: 1.6em;
+}
+
+.wp-caption.alignleft,
+.wp-caption.alignright,
+.wp-caption.aligncenter {
+	margin-bottom: 1.2em;
+}
+
+/**
+ * 14.1 Captions
+ */
+
+.wp-caption {
+	margin-bottom: 1.6em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0;
+}
+
+.wp-caption-text {
+	color: #707070;
+	color: rgba(51, 51, 51, 0.7);
+	line-height: 1.5;
+	padding: 0.5em 0;
+	font-size: 14px;
+}
+
+
+/**
+ * 14.2 Galleries
+ */
+
+.gallery {
+	margin-bottom: 1.6em;
+}
+
+.gallery-item {
+	display: inline-block;
+	padding: 1.79104477%;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-icon img {
+	margin: 0 auto;
+}
+
+.gallery-caption {
+	color: #707070;
+	color: rgba(51, 51, 51, 0.7);
+	display: block;
+	line-height: 1.5;
+	padding: 0.5em 0;
+}
+
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+	display: none;
+}
+
+.post-password-form input[type=submit] {
+    border: none;
+    padding: 2px 14px;
+	background:#1a7dd7;
+	color:#fff;
+}
+.post-password-form input[type="password"] {
+	border: 1px solid #ddd;
+	width: 100%;
+	height: 40px;
+	padding: 0 15px;
+}
+.site-title {
+	font-size: 30px;
+	margin: 0;
+	margin-top: 12px;
+	color:#333;
+}
+.site-title a {
+    font-weight: 600;
+		color:#333;
+     font-family: "Raleway", sans-serif;	
+    text-transform: capitalize;
+}
+.site-title a:hover {
+	color:#333;
+}
+.site-description {
+	margin: 0;
+	color: #333;
+	padding-bottom: 10px;
+}
+.sticky{
+	border-color:#1a7dd7;
+}
+.bypostauthor {
+	color:#333;
+}
+
+
+.wp-block-cover.alignleft{
+	margin-right: 10px;
+}
+.wp-block-button.alignleft {
+	margin-right: 10px;
+}
+.wp-block-gallery.alignleft {
+	margin-right: 10px;
+}
+.has-large-font-size {
+	font-size: 36px;
+	line-height: 1.3;
+}
+
+.wp-block-media-text {
+	margin-top: 15px;
+}
+.inner-post-pagination a, .inner-post-pagination  span.post-page-numbers {
+	border: 2px solid #ddd;
+	display: inline-block;
+	min-width: 35px;
+	text-align: center;
+	margin-left: 2px;
+	height: 33px;
+	line-height: 30px;
+	margin-right: 3px;
+	color: #444;
+}
+.inner-post-pagination  span.current{
+	border: 2px solid #FE8264;
+	color: #FE8264;
+}
+.wp-block-table.is-style-stripes td {
+	border-color: transparent;
+	padding: 5px 13px;
+}
+
+.single-blog-content table, .single-blog-content th, .single-blog-content td {
+	border: 1px solid #d1d1d1;
+}
+.single-blog-content table th {
+	padding: 12px 12px;
+	font-size: 15px;
+	border-color: #ddd;
+	text-align: center;
+	font-weight: 400;
+}
+.comment-list table, .comment-list th, .comment-list td {
+	border: 1px solid #d1d1d1;
+}
+.comment-list table th {
+	padding: 12px 12px;
+	font-size: 15px;
+	border-color: #ddd;
+	text-align: center;
+	font-weight: 400;
+}
+.post-password-form label {
+	width: 100%;
+}
