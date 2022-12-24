@@ -16,7 +16,8 @@
     "swarm:leave": "docker swarm leave --force",
     "swarm:up": "docker stack deploy -c docker-compose.stack.yml wms",
     "swarm:down": "docker stack rm wms",
-    "swarm:deploy": "./scripts/deploy-prod.sh"
+    "swarm:deploy": "./scripts/deploy-prod.sh",
+    "prune": "docker system prune"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   },
   "homepage": "https://github.com/max2-wms/WebMediaSolutionZ#readme",
   "devDependencies": {
-    "husky": "^8.0.1"
+    "husky": "^8.0.1",
+    "npm-run-all": "^4.1.5"
   }
 }
