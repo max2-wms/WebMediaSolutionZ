@@ -32,7 +32,7 @@ define('DB_NAME', 'webmedj6_webmediasolutionz');
 define('DB_USER', 'webmedj6_tsn');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'Password01');
+define('DB_PASSWORD', 'password01');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
