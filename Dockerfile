@@ -16,7 +16,7 @@ COPY --chown=www-data ./web .
 COPY --chown=www-data ./php.ini php.ini
 
 # setting up wordpress db password variable
-ENV WORDPRESS_DB_PASSWORD password01
+ENV WORDPRESS_DB_PASSWORD Password_01
 
 # exposing appropriate ports
 EXPOSE 80 443

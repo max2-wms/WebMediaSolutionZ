@@ -38,7 +38,7 @@ services:
     image: max2wms/wms
     environment:
       WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_PASSWORD: password01
+      WORDPRESS_DB_PASSWORD: Password_01
     ports:
       - 80:80
     networks:
@@ -49,7 +49,7 @@ services:
     volumes:
       - ./data/actual/prod:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: password01
+      MYSQL_ROOT_PASSWORD: Password_01
     networks:
       - wms
 
@@ -61,7 +61,7 @@ services:
       - 8088:8080
     environment:
       PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: password01
+      MYSQL_ROOT_PASSWORD: Password_01
     networks:
       - wms
 
