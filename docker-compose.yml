@@ -9,11 +9,11 @@ services:
     image: max2wms/wms
     build: .
     volumes:
-      - ./web/wp-content:/var/www/html/wp-content
+      - ./web:/var/www/html
       - ./php.ini:/var/www/html/php.ini
     environment:
       WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_PASSWORD: password01
+      WORDPRESS_DB_PASSWORD: Password_01
     ports:
       - 80:80
     networks:
@@ -23,9 +23,10 @@ services:
     container_name: mysql
     image: mysql:5.7
     volumes:
-      - ./data/actual/dev:/var/lib/mysql
+      - wms_data:/var/lib/mysql
+      - ./data/bootup:/docker-entrypoint-initdb.d
     environment:
-      MYSQL_ROOT_PASSWORD: password01
+      MYSQL_ROOT_PASSWORD: Password_01
     networks:
       - wms
 
@@ -33,14 +34,18 @@ services:
     container_name: phpmyadmin
     depends_on:
       - db
-    image: phpmyadmin/phpmyadmin
+    image: phpmyadmin
     ports:
       - 8080:80
     environment:
       PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: password01
+      MYSQL_ROOT_PASSWORD: Password_01
+      PMA_ARBITRARY: 1
     networks:
       - wms
 
 networks:
   wms:
+
+volumes:
+  wms_data:

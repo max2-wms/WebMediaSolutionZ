@@ -4,7 +4,7 @@
   "description": "Dockerized Wordpress application for Web Media Solutionz",
   "main": "index.js",
   "scripts": {
-    "start": "docker-compose up -d",
+    "start": "docker-compose up",
     "stop": "docker-compose down",
     "build": "docker build -t max2wms/wms .",
     "build:up": "docker-compose -f docker-compose.build.yml up --build",

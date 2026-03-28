@@ -28,6 +28,11 @@
 
 	window.wp.receiveEmbedMessage = function( e ) {
 		var data = e.data;
+
+		if ( ! data ) {
+			return;
+		}
+
 		if ( ! ( data.secret || data.message || data.value ) ) {
 			return;
 		}
@@ -38,6 +43,7 @@
 
 		var iframes = document.querySelectorAll( 'iframe[data-secret="' + data.secret + '"]' ),
 			blockquotes = document.querySelectorAll( 'blockquote[data-secret="' + data.secret + '"]' ),
+			allowedProtocols = new RegExp( '^https?:$', 'i' ),
 			i, source, height, sourceURL, targetURL;
 
 		for ( i = 0; i < blockquotes.length; i++ ) {
@@ -72,6 +78,11 @@
 
 				sourceURL.href = source.getAttribute( 'src' );
 				targetURL.href = data.value;
+
+				/* Only follow link if the protocol is in the allow list. */
+				if ( ! allowedProtocols.test( targetURL.protocol ) ) {
+					continue;
+				}
 
 				/* Only continue if link hostname matches iframe's hostname. */
 				if ( targetURL.host === sourceURL.host ) {
