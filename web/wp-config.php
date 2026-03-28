@@ -26,10 +26,10 @@ define('FS_METHOD', 'direct');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'webmedj6_webmediasolutionz');
+define('DB_NAME', 'wordpress');
 
 /** MySQL database username */
-define('DB_USER', 'webmedj6_tsn');
+define('DB_USER', 'root');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'Password_01');
