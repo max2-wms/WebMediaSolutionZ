@@ -17,7 +17,8 @@
     "swarm:up": "docker stack deploy -c docker-compose.stack.yml wms",
     "swarm:down": "docker stack rm wms",
     "swarm:deploy": "./scripts/deploy-prod.sh",
-    "prune": "docker system prune"
+    "prune": "docker system prune",
+    "clear:db": "docker volume rm wms_wms_data"
   },
   "repository": {
     "type": "git",

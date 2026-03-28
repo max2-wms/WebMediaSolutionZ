@@ -5,7 +5,8 @@ services:
   wordpress:
     container_name: web
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     image: max2wms/wms
     build: .
     volumes:
@@ -13,6 +14,8 @@ services:
       - ./php.ini:/var/www/html/php.ini
     environment:
       WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: webmedj6_webmediasolutionz
+      WORDPRESS_DB_USER: webmedj6_tsn
       WORDPRESS_DB_PASSWORD: Password_01
     ports:
       - 80:80
@@ -24,9 +27,17 @@ services:
     image: mysql:5.7
     volumes:
       - wms_data:/var/lib/mysql
-      - ./data/bootup:/docker-entrypoint-initdb.d
+      - ./data/bootup/local.sql:/docker-entrypoint-initdb.d/init.sql
     environment:
       MYSQL_ROOT_PASSWORD: Password_01
+      MYSQL_DATABASE: webmedj6_webmediasolutionz
+      MYSQL_USER: webmedj6_tsn
+      MYSQL_PASSWORD: Password_01
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-pPassword_01"]
+      interval: 5s
+      timeout: 10s
+      retries: 30
     networks:
       - wms
 
