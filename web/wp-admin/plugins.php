@@ -65,12 +65,6 @@ if ( $action ) {
 				wp_redirect( self_admin_url("import.php?import=" . str_replace('-importer', '', dirname($plugin))) ); // overrides the ?error=true one above and redirects to the Imports page, stripping the -importer suffix
 			} else if ( isset($_GET['from']) && 'press-this' == $_GET['from'] ) {
 				wp_redirect( self_admin_url( "press-this.php") );
-			} else if ( isset( $_GET['from'] ) && 'try-gutenberg' == $_GET['from'] ) {
-				if ( 'gutenberg/gutenberg.php' === $plugin ) {
-					wp_redirect( self_admin_url( "admin.php?page=gutenberg" ) );
-				} else {
-					wp_redirect( self_admin_url() );
-				}
 			} else {
 				wp_redirect( self_admin_url("plugins.php?activate=true&plugin_status=$status&paged=$page&s=$s") ); // overrides the ?error=true one above
 			}
@@ -461,7 +455,7 @@ if ( ! empty( $invalid ) ) {
 			/* translators: 1: plugin file 2: error message */
 			__( 'The plugin %1$s has been <strong>deactivated</strong> due to an error: %2$s' ),
 			'<code>' . esc_html( $plugin_file ) . '</code>',
-			$error->get_error_message() );
+			esc_html( $error->get_error_message() ) );
 		echo '</p></div>';
 	}
 }
@@ -496,7 +490,7 @@ if ( ! empty( $invalid ) ) {
 		delete_transient( 'plugins_delete_result_' . $user_ID );
 
 		if ( is_wp_error($delete_result) ) : ?>
-		<div id="message" class="error notice is-dismissible"><p><?php printf( __('Plugin could not be deleted due to an error: %s'), $delete_result->get_error_message() ); ?></p></div>
+		<div id="message" class="error notice is-dismissible"><p><?php printf( __('Plugin could not be deleted due to an error: %s'), esc_html( $delete_result->get_error_message() ) ); ?></p></div>
 		<?php else : ?>
 		<div id="message" class="updated notice is-dismissible">
 			<p>

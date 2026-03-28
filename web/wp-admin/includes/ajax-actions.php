@@ -1070,6 +1070,8 @@ function wp_ajax_replyto_comment( $action ) {
 			if ( wp_create_nonce( 'unfiltered-html-comment' ) != $_POST['_wp_unfiltered_html_comment'] ) {
 				kses_remove_filters(); // start with a clean slate
 				kses_init_filters(); // set up the filters
+				remove_filter( 'pre_comment_content', 'wp_filter_post_kses' );
+				add_filter( 'pre_comment_content', 'wp_filter_kses' );
 			}
 		}
 	} else {
@@ -1480,19 +1482,6 @@ function wp_ajax_update_welcome_panel() {
 		wp_die( -1 );
 
 	update_user_meta( get_current_user_id(), 'show_welcome_panel', empty( $_POST['visible'] ) ? 0 : 1 );
-
-	wp_die( 1 );
-}
-
-/**
- * Ajax handler for updating whether to display the Try Gutenberg panel.
- *
- * @since 4.9.8
- */
-function wp_ajax_update_try_gutenberg_panel() {
-	check_ajax_referer( 'try-gutenberg-panel-nonce', 'trygutenbergpanelnonce' );
-
-	update_user_meta( get_current_user_id(), 'show_try_gutenberg_panel', empty( $_POST['visible'] ) ? 0 : 1 );
 
 	wp_die( 1 );
 }
@@ -2081,7 +2070,7 @@ function wp_ajax_upload_attachment() {
 			'success' => false,
 			'data'    => array(
 				'message'  => __( 'Sorry, you are not allowed to upload files.' ),
-				'filename' => $_FILES['async-upload']['name'],
+				'filename' => esc_html( $_FILES['async-upload']['name'] ),
 			)
 		) );
 
@@ -2095,7 +2084,7 @@ function wp_ajax_upload_attachment() {
 				'success' => false,
 				'data'    => array(
 					'message'  => __( 'Sorry, you are not allowed to attach files to this post.' ),
-					'filename' => $_FILES['async-upload']['name'],
+					'filename' => esc_html( $_FILES['async-upload']['name'] ),
 				)
 			) );
 
@@ -2105,7 +2094,11 @@ function wp_ajax_upload_attachment() {
 		$post_id = null;
 	}
 
-	$post_data = isset( $_REQUEST['post_data'] ) ? $_REQUEST['post_data'] : array();
+	$post_data = ! empty( $_REQUEST['post_data'] ) ? _wp_get_allowed_postdata( _wp_translate_postdata( false, (array) $_REQUEST['post_data'] ) ) : array();
+
+	if ( is_wp_error( $post_data ) ) {
+		wp_die( $post_data->get_error_message() );
+	}
 
 	// If the context is custom header or background, make sure the uploaded file is an image.
 	if ( isset( $post_data['context'] ) && in_array( $post_data['context'], array( 'custom-header', 'custom-background' ) ) ) {
@@ -2115,7 +2108,7 @@ function wp_ajax_upload_attachment() {
 				'success' => false,
 				'data'    => array(
 					'message'  => __( 'The uploaded file is not a valid image. Please try again.' ),
-					'filename' => $_FILES['async-upload']['name'],
+					'filename' => esc_html( $_FILES['async-upload']['name'] ),
 				)
 			) );
 
@@ -2130,7 +2123,7 @@ function wp_ajax_upload_attachment() {
 			'success' => false,
 			'data'    => array(
 				'message'  => $attachment_id->get_error_message(),
-				'filename' => $_FILES['async-upload']['name'],
+				'filename' => esc_html( $_FILES['async-upload']['name'] ),
 			)
 		) );
 
@@ -2263,6 +2256,10 @@ function wp_ajax_set_attachment_thumbnail() {
 
 	$thumbnail_id = (int) $_POST['thumbnail_id'];
 	if ( empty( $thumbnail_id ) ) {
+		wp_send_json_error();
+	}
+
+	if ( false === check_ajax_referer( 'set-attachment-thumbnail', '_ajax_nonce', false ) ) {
 		wp_send_json_error();
 	}
 
@@ -2478,7 +2475,7 @@ function wp_ajax_query_attachments() {
 
 	// Filter query clauses to include filenames.
 	if ( isset( $query['s'] ) ) {
-		add_filter( 'posts_clauses', '_filter_query_attachment_filenames' );
+		add_filter( 'wp_allow_query_attachment_by_filename', '__return_true' );
 	}
 
 	/**
@@ -3143,13 +3140,29 @@ function wp_ajax_parse_media_shortcode() {
 
 	$shortcode = wp_unslash( $_POST['shortcode'] );
 
+	// Only process previews for media related shortcodes:
+	$found_shortcodes = get_shortcode_tags_in_content( $shortcode );
+	$media_shortcodes = array(
+		'audio',
+		'embed',
+		'playlist',
+		'video',
+		'gallery',
+	);
+
+	$other_shortcodes = array_diff( $found_shortcodes, $media_shortcodes );
+
+	if ( ! empty( $other_shortcodes ) ) {
+		wp_send_json_error();
+	}
+
 	if ( ! empty( $_POST['post_ID'] ) ) {
 		$post = get_post( (int) $_POST['post_ID'] );
 	}
 
 	// the embed shortcode requires a post
 	if ( ! $post || ! current_user_can( 'edit_post', $post->ID ) ) {
-		if ( 'embed' === $shortcode ) {
+		if ( in_array( 'embed', $found_shortcodes, true ) ) {
 			wp_send_json_error();
 		}
 	} else {

@@ -35,7 +35,7 @@ define('DB_USER', 'webmedj6_tsn');
 define('DB_PASSWORD', 'Password_01');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'db:3306');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -52,14 +52,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         '6bcc71e5ee9e2ee7695831b69a55fac98e1926cc');
+define('SECURE_AUTH_KEY',  '19493dadba68d4a81714658a5df2f3a3b1bb43c2');
+define('LOGGED_IN_KEY',    '3ed08dc8a3693abbf6bf8730376764202b9ebc0a');
+define('NONCE_KEY',        '25b5906cb504a92f67ab31ecc0ba225bd2801543');
+define('AUTH_SALT',        'eee7d18062ba048ac467eb66a88a9b33acf33ea8');
+define('SECURE_AUTH_SALT', 'e99ebaf8eded1eb9963203e8a7b9904f3b3698df');
+define('LOGGED_IN_SALT',   'b53d0efd149ad5b0b1a1df10b28b139dee920dad');
+define('NONCE_SALT',       'c4aa9d3f51665bc32a1afecc086b0b7d1f30464e');
 
 /**#@-*/
 
